@@ -9,6 +9,7 @@ import './index.css'
 const myFirstElement = <h1>This is my first element</h1>;
 
 ReactDOM.createRoot(document.getElementById('root')).render(
+  // enabling warnings during development
   <React.StrictMode>
     <App />
   </React.StrictMode>
