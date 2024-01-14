@@ -33,10 +33,26 @@ Follow these instructions to get a copy of the project up and running on your lo
    ```bash
    git clone https://github.com/DziadoszWiktor/ultimate-react-course-2023.git
 
-2. Enter in one of the project.
+2. Enter in one of the projects.
    ```bash
    cd *project-name*
 3. Install dependencies and run project locally
     ```bash
     npm install
     npm run dev
+
+### QuickTips
+After installing all vs code extensions (requried) we can use some tricks for increase our productivity:
+
+* For creating component default template with file name
+      
+      rafce and click enter
+
+* For creating div with className
+      
+      .class_name and click enter (result: <div className="class_name"></div>)
+
+* For quick create element
+
+      *element* (ex. h1) and click enter (result: <h1></h1>)
+
