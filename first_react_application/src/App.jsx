@@ -22,6 +22,7 @@ function App() {
 
     return (
       <div className='app'>
+        <h1 className='app_title'>Kanban Table</h1>
         <TaskForm setTask={setTask} />
         <main className="app_main">
           <TaskColumn columnName="Backlog" iconPath={GlowingStar} tasks={tasks} status="backlog" handleDelete={handleDelete} />

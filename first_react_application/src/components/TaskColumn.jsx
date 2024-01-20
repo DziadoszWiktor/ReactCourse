@@ -16,6 +16,7 @@ const TaskColumn = ({columnName, iconPath, tasks, status, handleDelete}) => {
                     <TaskCard 
                         key={index} 
                         title={task.task}
+                        description={task.task_desc}
                         tags={task.tags}
                         handleDelete={handleDelete}
                         index={index}

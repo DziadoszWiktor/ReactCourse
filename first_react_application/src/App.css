@@ -13,3 +13,10 @@
   width: 33.33%;
   margin: 20px;
 }
+
+.app_title {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}

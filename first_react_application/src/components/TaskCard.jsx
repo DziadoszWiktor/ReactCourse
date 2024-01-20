@@ -4,10 +4,11 @@ import Tag from './Tag'
 
 import Delete from "../assets/delete.png"
 
-export const TaskCard = ({title, tags, handleDelete, index}) => {
+export const TaskCard = ({title, description, tags, handleDelete, index}) => {
   return (
     <article className='task_card'>
-        <p className='task_text'>{title}</p>
+        <h1 className='task_title'>{title}</h1>
+        <p className='task_desc'>{description}</p>
         <div  className='task_card_bottom_line'>
             <div taks_card_tags>
               {

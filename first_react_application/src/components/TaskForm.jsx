@@ -6,7 +6,8 @@ const TaskForm = ({setTask}) => {
 
     const [taskData, setTaskData] = useState({
         task: "",
-        status: "Analysis",
+        task_desc: "",
+        status: "backlog",
         tags: []
     });
 
@@ -42,7 +43,8 @@ const TaskForm = ({setTask}) => {
         })
         setTaskData({
             task: "",
-            status: "Analysis",
+            task_desc: "",
+            status: "backlog",
             tags: []
         })
     }
@@ -54,7 +56,15 @@ const TaskForm = ({setTask}) => {
                     name="task"
                     value={taskData.task}
                     className='task_input' 
-                    placeholder='Enter your task' 
+                    placeholder='Title' 
+                    onChange={handleChange}
+                />
+                <textarea 
+                    type="text" 
+                    name="task_desc"
+                    value={taskData.task_desc}
+                    className='task_desc_input' 
+                    placeholder='Task details...' 
                     onChange={handleChange}
                 />
                 <div className='task_form_bottom_line'>
@@ -72,7 +82,23 @@ const TaskForm = ({setTask}) => {
                             <option value="tests">Tests</option>
                             <option value="done">Done</option>
                         </select>
-                        <button type='submit' className='task_submit'>Add task</button>
+                        <button type='submit' className='task_submit' class="cssbuttons-io-button">
+                        Add task
+                            <div class="icon">
+                                <svg
+                                height="24"
+                                width="24"
+                                viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg"
+                                >
+                                <path d="M0 0h24v24H0z" fill="none"></path>
+                                <path
+                                    d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                    fill="currentColor"
+                                ></path>
+                                </svg>
+                            </div>
+                        </button>
                     </div>
                 </div>
             </form>

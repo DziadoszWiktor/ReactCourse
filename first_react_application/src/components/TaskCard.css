@@ -4,12 +4,19 @@
     border: 1px solid white;
     border-radius: 10px;
     padding: 15px;
-    margin: 15px 0;
+    margin: 15px 0px;
+    background-color: white;
 }
 
-.task_text {
+.task_title {
     font-size: 18px;
-    font-weight: 600;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.task_desc {
+    font-size: 12px;
+    font-weight: 300;
     margin-bottom: 15px;
 }
 
